@@ -1,0 +1,23 @@
+<%= form_for :user, url: articles_path do |f| %>
+<div>
+	<%= f.label :first_name %> </br>
+	<%= f.text_field :first_name %> 
+</div>
+<div>
+	<%= f.label :last_name %> </br>
+	<%= f.text_field :last_name %> 
+</div>
+<p>
+    <%= f.submit 'Sign up'%>
+  </p>
+<% end %>
+
+<p>
+  <strong>First Name:</strong>
+  <%#= @article.text %>
+</p>
+ 
+<p>
+  <strong>Last Name:</strong>
+  <% #= @article.text %>
+</p>
